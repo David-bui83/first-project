@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/David-bui83/first-project/issues"
   },
-  "homepage": "https://github.com/David-bui83/first-project#readme"
+  "homepage": "https://github.com/David-bui83/first-project#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
