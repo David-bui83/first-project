@@ -8,7 +8,7 @@ const express = require('express')
 const app = express()
 
 // Serve up website constents from teh specified folder
-const websitePath = path.join(_dirname, WEBSITE_FOLDER)
+const websitePath = path.join(__dirname, 'website')
 app.use(express.static(websitePath))
 
 // start the web server listening on a port
