@@ -5,16 +5,13 @@ body{
     margin: auto;
 }
 
-header {
-    border: 3px;
-}
-
-header h1 {
+header > h1 {
     text-align: center;
+    border: 1px green;
 }
 
 div{
     width: 50%;
     border: 2px red;
-    display: inline-block
+    display: inline-block;
 }
