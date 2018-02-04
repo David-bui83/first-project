@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,60 @@
     <link rel="stylesheet" href="style.css">
     <title>First Project</title>
 </head>
+
 <body>
     <header id="page-title">
         <h1>Bui, David</h1>
     </header>
-    <h1>Welcome to IS445 Homework 1</h1>
-    <img src="" alt="">
-    <div>
-        <h1>About Me</h1>
-        <h1>Education</h1>
-        <p>2018, Bachelor of IS, CSULB</p>
-        <br/>
-        <h1>Skills</h1>
-        <ol>
-            <li>Web programming: node.js, HTML, CSS, JavaScript</li>
-            <li>Python</li>
-        </ol>
-        <br/>
-        <h1>Expectation for this course</h1>
-        <p>I'd like you to cover the jQuery and best practices of the web design.
-            More examples on CSS are welcome. Additionally, I'd like to learn bootstrap,
-            DOM, and JavaScript. 
-        </p>
+    <h2 id="greeting">Welcome to IS445 Homework 1</h2>
+    <div id="image">
+        <img src="image/homer.png" alt="Homer Simpson">
     </div>
-    <div>
-        <h1>Contact Me</h1>
-        <form action="">
-            <p>Name:</p>
-            <input type="text" name="" id="">
-            <br/>
-            <p>E-mail:</p>
-            <input type="text">
-            <br/>
-            <p>Messages:</p>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <br/>
-            <button>Send your message</button>
-        </form>
-    </div>
+
+    <table>
+        <tr>
+            <th>About Me</th>
+            <th>Contact Me</th>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <span>Education</span>
+                    <br/>2018, Bachelor of IS, CSULB</p>
+                <br/>
+
+                <span id="skills">Skills</span>
+                <ul>
+                    <li>Web programming: node.js, HTML, CSS, JavaScript</li>
+                    <li>Python</li>
+                </ul>
+
+                <br/>
+                <span id="expectation">Expectation for this course</span>
+                <br/>
+                <br/>
+                <p>I'd like you to cover the jQuery and best practices of the web design. More examples on CSS are welcome.
+                    Additionally, I'd like to learn bootstrap, DOM, and JavaScript.
+                </p>
+            </td>
+            <td>
+                <form action="">
+                    <label>Name:</label>
+                    <br/>
+                    <input type="text" name="input-Name" id="Name">
+
+                    <label>E-mail:</label>
+                    <input type="text" name="input-Email" id="Email">
+
+                    <label id="messages">Messages:</label>
+                    <textarea name="Messages" id="Messages" cols="30" rows="100"></textarea>
+
+                    <button>Send your message</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
 </body>
+
 </html>
