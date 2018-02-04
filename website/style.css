@@ -7,7 +7,7 @@ body{
 
 header > h1 {
     text-align: center;
-    border: 1px green;
+    border-bottom: 2px solid green;
 }
 
 div{
