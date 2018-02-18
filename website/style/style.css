@@ -7,3 +7,14 @@ body{
 .row{
     margin-top: 70px;
 }
+
+.image{
+    border: 1px dashed black;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+#about, #contact{
+    border: 5px solid red;
+}
