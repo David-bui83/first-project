@@ -5,7 +5,6 @@
 @import url(textstyle.css);
 
 body{
-   
     margin: auto;
 }
 
@@ -25,11 +24,10 @@ body{
 }
 
 #main-body{
-    margin-top: 200px;
+    margin-top: 300px;
     margin-right: auto;
     margin-left: auto;
 }
-
 
 .homer-image{
     color: #3b5998;

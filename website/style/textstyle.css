@@ -23,3 +23,15 @@ h1{
     text-align: center;
 }
 
+.row h1{
+    color: #3b5998;
+}
+
+.navbar-brand h1{
+    color: #3b5998;
+}
+
+.navbar .nav-item{
+    color: #3b5998;
+}
+
