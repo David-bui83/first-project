@@ -1,0 +1,46 @@
+/* style for bootstap.html */
+
+.row-main{
+    margin-bottom: 5px;
+    height: 40px;
+}
+
+.row-section1{
+    border: 2px solid red;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 450px;
+}
+
+.row-section2{
+    border: 2px solid rgb(177, 177, 12);
+    margin-top: 15px;
+    height: 540px;
+}
+
+.container-side{
+    border-bottom: 1px solid rgb(54, 54, 54);
+}
+
+.display-5{
+    width: 100%;
+    position: absolute;
+    left: 350px
+}
+
+.display-6{
+    position: absolute;
+    left: 365px;
+    top: 55px;
+    
+}
+
+.display-7{
+    
+    position: absolute;
+    left: 365px;
+}
+
+.jumbotron-side{
+    widows: 100%;
+}

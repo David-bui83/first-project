@@ -1,10 +1,7 @@
 /*Style for Homeowrk 2*/
 
 @import url(form.css); 
-div{
-    border: 1px dashed black;
-    
-}
+@import url(boot.css);
 
 body{
    
