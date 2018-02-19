@@ -44,17 +44,45 @@
         <div class="image">
             <h2>Life is a Voyage</h2>
             <img src="image/homer.png" alt="Homer Simpson">
-            
+
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 bg-light" id="about">
-                <h1>About Me</h1>
+            <div class="col-xs-6 col-lg-6 col-md-6 bg-light" id="about">
+                <h3 class="info">About Me</h3>
+                <p>
+                    <span class="edu">Education</span>
+                    <br/>2018, Bachelor of IS, CSULB</p>
+                <span>skills</span>
+                <ol>
+                    <li>Web programming: node.js, HMTL, CSS, JavaSript</li>
+                    <li>Python</li>
+                </ol>
+                <span>Expectation for this course</span>
+                <br/>
+                <br/>
+                <p>I'd like you to cover the jquery and best practices of Web design. More examples on CSS are welcome. I wuold
+                    also like to learn more about the node.js.</p>
             </div>
-            <div class="col-lg-6 bg-light" id="contact">
-                <h1>Contact Me</h1>
+            <div class="col-xs-6 col-lg-6 col-md-6 bg-light" id="contact">
+                <h3 class="info">Contact Me</h3>
+                <form action="post">
+                    <div class="form-group">
+                        <label for="Name">Name:</label>
+                        <input type="text" class="form-control" id="name-input" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email-input" placeholder="example@emil.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" name="textarea" id="text-input" cols="10" rows="3" placeholder="Enter message here"></textarea>
+                    </div>
+                    <button class="btn btn-light btn-sm" id="contact-button">Send your message</button>
+                </form>
             </div>
         </div>
     </div>

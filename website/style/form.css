@@ -1,0 +1,19 @@
+/* style for form */
+
+form{
+    border: 1px solid rgb(180, 176, 176);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#name-input, #email-input, #text-input{
+    width: 80%;
+}
+
+form #contact-button{ 
+    margin-left: 30%;
+    border: 1px solid gray
+}
+
