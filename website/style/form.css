@@ -13,10 +13,16 @@ aboutForm{
 }
 
 form #contact-button{ 
+    margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 30%;
     border: 1px solid gray
 }
 
 #contact label{
     color: #3b5998;
+}
+
+#text-input{
+    margin-bottom: 15px;
 }
