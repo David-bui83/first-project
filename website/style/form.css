@@ -16,3 +16,7 @@ form #contact-button{
     margin-left: 30%;
     border: 1px solid gray
 }
+
+#contact label{
+    color: #3b5998;
+}

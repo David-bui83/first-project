@@ -21,6 +21,7 @@ body{
 
 .navbar{
     background-color: #f7f7f7;
+    border-bottom: 2px solid #3b5998;
 }
 
 #main-body{
@@ -30,15 +31,27 @@ body{
 }
 
 
-.image{
+.homer-image{
+    color: #3b5998;
+    border: 2px solid #3b5998;
     margin-top: 70px;
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+#about h3{
+    color: #3b5998;
+}
+
+#contact h3{
+    color: #3b5998;
 }
 
 #about, #contact{
-    border: 5px solid rgb(158, 19, 19);
+    border: 5px solid #3b5998;
 }
 
 img{
@@ -56,11 +69,19 @@ span{
 }
 
 footer{
+    border-top: 2px solid #3b5998;
     text-align: center;
     margin: 20px;
+    background-color: #f7f7f7;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .container{
     padding: none;
+}
+
+.jumbotron{
+    background-color: #f7f7f7;
 }
 
