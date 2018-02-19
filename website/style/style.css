@@ -1,18 +1,24 @@
 /*Style for Homeowrk 2*/
 
 @import url(form.css); 
+div{
+    border: 1px dashed black;
+    
+}
 
 body{
+   
     margin: auto;
 }
 
 #head{
-    background-color: dimgrey;
+    width: 100%;
     position: fixed;
     z-index: 1;
     top:0;
-    margin-top: none;
     padding: none;
+    margin: auto;
+    background-color: rgb(236, 233, 233);
 }
 
 #main-body{
@@ -54,8 +60,4 @@ footer{
 
 .container{
     padding: none;
-}
-
-.dropdown-menu .dropdown-item{
-    z-index: 1;
 }
