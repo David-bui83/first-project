@@ -15,7 +15,7 @@ body{
     top:0;
     padding: none;
     margin: auto;
-    background-color: rgb(236, 233, 233);
+    background-color: gray;
 }
 
 #main-body{
@@ -52,9 +52,18 @@ span{
 
 
 footer{
+    text-align: center;
     margin: 20px;
 }
 
 .container{
     padding: none;
+}
+
+p{
+    color: #8b9dc3;
+}
+
+h1, h2, h3, h4{
+    color: #3b5998;
 }

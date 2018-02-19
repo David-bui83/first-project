@@ -9,33 +9,33 @@
     border: 2px solid red;
     margin-top: 15px;
     margin-bottom: 15px;
-    height: 450px;
+    height: 300px;
 }
 
 .row-section2{
     border: 2px solid rgb(177, 177, 12);
     margin-top: 15px;
-    height: 540px;
+    height: 500px;
 }
 
 .container-side{
     border-bottom: 1px solid rgb(54, 54, 54);
 }
 
-.display-5{
+.display-6{
     width: 100%;
     position: absolute;
     left: 350px
 }
 
-.display-6{
+.display-7{
     position: absolute;
     left: 365px;
     top: 55px;
     
 }
 
-.display-7{
+.display-8{
     
     position: absolute;
     left: 365px;
