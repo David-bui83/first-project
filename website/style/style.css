@@ -6,9 +6,22 @@ body{
     margin: auto;
 }
 
-.row{
-    margin-top: 70px;
+#head{
+    overflow: hidden;
+    background-color: dimgrey;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    margin-top: none;
+    padding: none;
 }
+
+#main-body{
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 .image{
     margin-top: 70px;
@@ -38,4 +51,12 @@ span{
 
 footer{
     margin: 20px;
+}
+
+.container{
+    padding: none;
+}
+
+.dropdown-menu .dropdown-item{
+    z-index: 1;
 }
