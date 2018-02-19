@@ -2,6 +2,7 @@
 
 @import url(form.css); 
 @import url(boot.css);
+@import url(textstyle.css);
 
 body{
    
@@ -15,7 +16,11 @@ body{
     top:0;
     padding: none;
     margin: auto;
-    background-color: gray;
+    background-color: #f7f7f7;
+}
+
+.navbar{
+    background-color: #f7f7f7;
 }
 
 #main-body{
@@ -50,7 +55,6 @@ span{
     text-align: center;
 }
 
-
 footer{
     text-align: center;
     margin: 20px;
@@ -60,10 +64,3 @@ footer{
     padding: none;
 }
 
-p{
-    color: #8b9dc3;
-}
-
-h1, h2, h3, h4{
-    color: #3b5998;
-}
