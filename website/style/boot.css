@@ -12,11 +12,11 @@
     height: 300px;
 }
 
-.row-section2{
+/* .row-section2{
     border: 2px solid rgb(177, 177, 12);
     margin-top: 15px;
     height: 500px;
-}
+} */
 
 .container-side{
     border-bottom: 1px solid rgb(54, 54, 54);
@@ -46,6 +46,6 @@
     height: 100%;
 }
 
-.jumbotron-side{
-    widows: 100%;
+video{
+    z-index: 1;
 }
