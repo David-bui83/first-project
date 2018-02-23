@@ -60,8 +60,8 @@
     </div>
 
     <div class="container" id="main-body">
-        <div class="jumbotron">
-            <h1 class="display-4">Homework 3</h1>
+        <div class="jumbotron" id="j-homework3">
+            <h1 class="d4">Homework 3</h1>
             <hr>
             <p class="lead">The program will take in three numbers. Next, the program will generate an array from the inputs. After, the
                 program will calculate and display the sum of the array. Finally, the program will convert and display the
@@ -70,40 +70,54 @@
             <hr class="my-4">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
-                    <h3 class="dislay-4" style="text-align: center;">Input</h3>
+                    <h3 class="d4" style="text-align: center;">Input</h3>
                     <form>
                         <div class="col">
                             <div class="form-group row">
-                                <label class="col-form-label" for="startNumber">start:</label>
+                                <label class="col-form-label" for="startNumber">Start:</label>
                                 <div class="col">
                                     <input type="text" class="form-control" id="startNum">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="endNumber">end:&nbsp;</label>
+                                <label for="endNumber">End:&nbsp;</label>
                                 <div class="col">
                                     <input type="text" class="form-control" id="endNum">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="stepNumber">step:</label>
+                                <label for="stepNumber">Step:</label>
                                 <div class="col">
                                     <input type="text" class="form-control" id="stepNum">
                                 </div>
                             </div>
                         </div>
                     </form>
-                    <button class="btn btn-outline-primary" onclick="mySubmit()">Submit</button>
-                    <button class="btn btn-outline-primary" onclick="clearInput()">Clear</button>
+                   
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <h3 class="dislay-4" style="text-align: center;">Output</h3>
-                    <p id="startOutput"></p>
-                    <p id="endOutput"></p>
-                    <p id="stepOutput"></p>
+                    <h3 class="d4" style="text-align: center;">Output</h3>
+                    <div class="form-group row">
+                        <div class="col">
+                            <p id="startOutput"></p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col">
+                            <p id="endOutput"></p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col">
+                            <p id="stepOutput"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+            <div class="row">
+                <button class="btn btn-outline-primary" style="margin:auto;" onclick="mySubmit()">Submit</button>
+                <button class="btn btn-outline-primary" style="margin:auto;" onclick="clearInput()">Clear</button>
+            </div>
             <script src="../script/homework3.js"></script>
 
         </div>

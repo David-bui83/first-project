@@ -21,9 +21,9 @@ function isEmpty($first, $second, $third) {
     try {
 
         // If statement to check condiction
-        if ($fNum === '' || $sNum === '' || $tNum === '') throw 'empty';
-        if (isNaN($fNum) || isNaN($sNum) || isNaN($tNum)) throw 'aplabet';
-        if ($tNum === '0') throw '0.'
+        if ($fNum === '' || $sNum === '' || $tNum === '') throw 'Input(s) cannot be empty';
+        if (isNaN($fNum) || isNaN($sNum) || isNaN($tNum)) throw 'Input(s) needs to number';
+        if ($tNum === '0') throw 'Step input cannot be 0.'
 
         // Setting variable to true
         $pass = true;
@@ -31,7 +31,7 @@ function isEmpty($first, $second, $third) {
     } catch (err) {
 
         // Alert box for error message
-        alert('Input(s) cannot be ' + err);
+        alert(err);
     } finally {
 
         // Return true value
@@ -146,5 +146,8 @@ function clearInput() {
     document.getElementById('startNum').value = '';
     document.getElementById('endNum').value = '';
     document.getElementById('stepNum').value = '';
+    document.getElementById('startOutput').innerHTML = '';
+    document.getElementById('endOutput').innerHTML = '';
+    document.getElementById('stepOutput').innerHTML = '';
 }
 
