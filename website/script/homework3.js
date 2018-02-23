@@ -14,17 +14,29 @@ function isEmpty($first, $second, $third) {
     const $sNum = $second;
     const $tNum = $third;
 
-    // If statement to check for empty input boxes
-    if ($fNum.trim() === '' || $sNum.trim() === '' || $tNum.trim() === '') {
-        alert("Input(s) cannot be empty.");
-        clearInput();
-    }
+    // local boolean variable for true false condition
+    let $pass = false;
 
-    if ($tNum === '0') {
-        alert("Step cannot be 0.");
-        clearInput;
-    }
+    // Try catch for exception handling
+    try {
 
+        // If statement to check condiction
+        if ($fNum === '' || $sNum === '' || $tNum === '') throw 'empty';
+        if (isNaN($fNum) || isNaN($sNum) || isNaN($tNum)) throw 'aplabet';
+        if ($tNum === '0') throw '0.'
+
+        // Setting variable to true
+        $pass = true;
+
+    } catch (err) {
+
+        // Alert box for error message
+        alert('Input(s) cannot be ' + err);
+    } finally {
+
+        // Return true value
+        return $pass;
+    }
 }
 
 /**
@@ -53,13 +65,15 @@ function getArray($first, $second, $third) {
         }
     }
     else if ($sNum > $eNum) {
+        // While loop to generate sequence and adding values to array
         while ($sNum >= $eNum) {
             // Adding number to array and decrementing by step number
             $numArray.push($sNum);
             $sNum += $stNum;
         }
     }
-    // Return Array
+
+    // Return array
     return $numArray;
 }
 
@@ -73,9 +87,13 @@ function getSum($numArray) {
     let $localArray = $numArray;
     let $sumOfArray = 0;
 
+    // For loop to get sum of array
     for (let i = 0; i <= $localArray.length - 1; i++) {
+        // Get sum of array
         $sumOfArray += $localArray[i];
     }
+
+    // Return sum
     return $sumOfArray;
 }
 
@@ -91,7 +109,6 @@ function getBinary($numArray) {
 
     // For loop to cycle through array and convert values to binary
     for (let i = 0; i <= $localArray.length - 1; i++) {
-
         // conver values to binary
         $binaryArray.push(Math.abs(parseInt($localArray[i].toString(2))));
     }
@@ -110,13 +127,14 @@ function mySubmit() {
     const $endNum = document.getElementById('endNum').value;
     const $stepNum = document.getElementById('stepNum').value;
 
-    // Calling function and passing values
-    isEmpty($startNum, $endNum, $stepNum)
+    // If statement to check condition of returned value
+    if (isEmpty($startNum, $endNum, $stepNum) === true) {
 
-    // Display values to web page
-    document.getElementById('startOutput').innerHTML = 'The generated array is ' + getArray($startNum, $endNum, $stepNum);
-    document.getElementById('endOutput').innerHTML = 'The sum is ' + getSum(getArray($startNum, $endNum, $stepNum));
-    document.getElementById('stepOutput').innerHTML = 'The binary of absolut element values are: ' + getBinary(getArray($startNum, $endNum, $stepNum));
+        // Display values to web page
+        document.getElementById('startOutput').innerHTML = 'The generated array is ' + getArray($startNum, $endNum, $stepNum);
+        document.getElementById('endOutput').innerHTML = 'The sum is ' + getSum(getArray($startNum, $endNum, $stepNum));
+        document.getElementById('stepOutput').innerHTML = 'The binary of absolut element values are: ' + getBinary(getArray($startNum, $endNum, $stepNum));
+    }
 }
 
 /** 
