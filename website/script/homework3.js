@@ -21,6 +21,7 @@ function isEmpty($first, $second, $third){
 }
 
 /**
+ * Function to generate sequence 
  * 
  * @param {*}  
  * @param {*}  
@@ -29,19 +30,21 @@ function isEmpty($first, $second, $third){
 function getArray($first, $second, $third){
 
     // Local variables to store data
-    const $sNum = $first;
-    const $eNum = $second;
-    const $stNum = $third;
+    let $sNum = parseInt($first);
+    let $eNum = parseInt($second);
+    let $stNum = parseInt($third);
 
     // Create empty array to store sequence
     const $numArray = [];                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 
     // While loop to generate sequence and adding values to array
     while ($sNum <= $eNum){
-        
 
-        eNum += stNum;
+        $numArray.push($sNum);
+        $sNum += $stNum;
     }
+
+    return $numArray;
 }
 
 function getSum($numArray){
@@ -66,7 +69,7 @@ function mySubmit() {
     // Calling function and passing values
     isEmpty($startNum, $endNum, $stepNum)
 
-    document.getElementById('startOutput').innerHTML = 'Start Number: ' + $sNum;
+    document.getElementById('startOutput').innerHTML = 'Start Number: ' + getArray($startNum, $endNum, $stepNum);
     document.getElementById('endOutput').innerHTML = 'End Number: ' + $eNum;
     document.getElementById('stepOutput').innerHTML = 'Step Number: ' + $sNum;
     // mySubmit($startNum, $endNum, $stepNum)
