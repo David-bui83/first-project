@@ -20,7 +20,7 @@ function isEmpty($first, $second, $third) {
     // Try catch for exception handling
     try {
 
-        // If statement to check condiction
+        // If statement to check condition
         if ($fNum === '' || $sNum === '' || $tNum === '') throw 'Input(s) cannot be empty';
         if (isNaN($fNum) || isNaN($sNum) || isNaN($tNum)) throw 'Input(s) needs to number';
         if ($tNum === '0') throw 'Step input cannot be 0.'
@@ -47,7 +47,7 @@ function isEmpty($first, $second, $third) {
  */
 function getArray($first, $second, $third) {
 
-    // Local variables to store data
+    // Covert input to integer and storing the data in a variable
     let $sNum = parseInt($first);
     let $eNum = parseInt($second);
     let $stNum = parseInt($third);
@@ -57,16 +57,20 @@ function getArray($first, $second, $third) {
 
     // If statement to check condition
     if ($sNum < $eNum) {
+
         // While loop to generate sequence and adding values to array
         while ($sNum <= $eNum) {
+
             // Adding number to array and incrementing by step number
             $numArray.push($sNum);
             $sNum += $stNum;
         }
     }
     else if ($sNum > $eNum) {
+
         // While loop to generate sequence and adding values to array
         while ($sNum >= $eNum) {
+
             // Adding number to array and decrementing by step number
             $numArray.push($sNum);
             $sNum += $stNum;
@@ -89,6 +93,7 @@ function getSum($numArray) {
 
     // For loop to get sum of array
     for (let i = 0; i <= $localArray.length - 1; i++) {
+
         // Get sum of array
         $sumOfArray += $localArray[i];
     }
@@ -109,6 +114,7 @@ function getBinary($numArray) {
 
     // For loop to cycle through array and convert values to binary
     for (let i = 0; i <= $localArray.length - 1; i++) {
+
         // conver values to binary
         $binaryArray.push(Math.abs(parseInt($localArray[i].toString(2))));
     }
@@ -150,4 +156,3 @@ function clearInput() {
     document.getElementById('endOutput').innerHTML = '';
     document.getElementById('stepOutput').innerHTML = '';
 }
-
