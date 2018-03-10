@@ -12,7 +12,6 @@ function getfile (){
             document.getElementById('t_out').innerHTML = ('ERROR', req.statusText);
         }
     };
-    req.close;
     req.onerror = function () {
         console.log('Network Error');
     };

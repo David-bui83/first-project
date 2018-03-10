@@ -1,8 +1,9 @@
 // JavaScript for callback
 
-function myCallBack() {
-
-    const mylist = [
+//function for testing sort 
+function test(){
+     // test code for sorting by email
+     const mylist = [
         {
           "id": 1,
           "name": "Leanne Graham",
@@ -234,17 +235,22 @@ function myCallBack() {
           }
         }
       ]
-    
+      
+      //test array for storing email
       emailArray = [];
 
+      //test loop for getting email from list
       for(let i = 0; i < mylist.length; i++){
           emailArray.push(mylist[i].email + '\n');
-      };
+      };    
 
-    
-
+    //displaying email sorted by alphabetical 
     document.getElementById('callback_output').innerHTML = emailArray.sort();
 
+}
 
+function myCallBack() {
+
+    test();
 
 }
