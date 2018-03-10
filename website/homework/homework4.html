@@ -63,59 +63,49 @@
         <div class="jumbotron" id="j-homework3">
             <h1 class="d4">Homework 4</h1>
             <hr>
-            <p class="lead">The program will take in three numbers. Next, the program will generate an array from the inputs. After, the
-                program will calculate and display the sum of the array. Finally, the program will convert and display the
-                binary values of each numbers. The first number is the starting number; the second number is the ending number,
-                and the last number is the step.</p>
+            <p class="lead">The url
+                <span>
+                    <a href="https://jsonplaceholder.typicode.com/users">'https://jsonplaceholder.typicode.com/users'</a>
+                </span>
+                has a list of users in JSON format. Please type the url in your browser to see the data. This assignment asks you to use
+                two APIs to retrieve data fromteh url. The first API is the old
+                <span>XMLHttpRequest</span> and its callback syntax. The second is the new
+                <span>fetch</span> method and its promise syntax. When access your web page, just display the following two results
+                (in italic blue format) - format the results whatever you want. Tips: use Chrome dev tools to debug / test
+                your code interactively.</p>
             <hr class="my-4">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
-                    <h3 class="d4" style="text-align: center;">Input</h3>
-                    <form>
-                        <div class="col">
-                            <div class="form-group row">
-                                <label class="col-form-label" for="startNumber">Start:</label>
-                                <div class="col">
-                                    <input type="text" class="form-control" id="startNum">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="endNumber">End:&nbsp;</label>
-                                <div class="col">
-                                    <input type="text" class="form-control" id="endNum">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="stepNumber">Step:</label>
-                                <div class="col">
-                                    <input type="text" class="form-control" id="stepNum">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    <h3 class="d4" style="text-align: center;">Callback</h3>
+                    <hr>
+                    <p>Use the Old
+                        <span>XMLHttpRequest</span> method and its callback syntax to retrive the data from teh above url and display
+                        the list of user emails - the
+                        <span>results are sorted by alphabet order.</span> 
+                    </p>
+                    
+                    <div class="jumbotron">
+
+                    </div>
+                    <button class="btn btn-outline-primary" style="margin:auto;" onclick="mySubmit()">Submit</button>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <h3 class="d4" style="text-align: center;">Output</h3>
-                    <div class="form-group row">
-                        <div class="col">
-                            <p id="startOutput"></p>
-                        </div>
+                    <h3 class="d4" style="text-align: center;">Promise</h3>
+                    <hr>
+                    <p>Use the new
+                        <span>fetch</span> method and its promise snytax to display the list of user's usernames. The
+                        <span>result is sorted by the username length - shortest first.</span>
+                    </p>
+                    <br/>
+                    <div class="jumbotron">
+
                     </div>
-                    <div class="form-group row">
-                        <div class="col">
-                            <p id="endOutput"></p>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col">
-                            <p id="stepOutput"></p>
-                        </div>
-                    </div>
+                    <button class="btn btn-outline-primary" style="margin:auto;" onclick="clearInput()">Clear</button>
                 </div>
             </div>
             <div class="row">
-                <button class="btn btn-outline-primary" style="margin:auto;" onclick="mySubmit()">Submit</button>
-                <button class="btn btn-outline-primary" style="margin:auto;" onclick="clearInput()">Clear</button>
+                
+                
             </div>
             <script src="../script/homework3.js"></script>
 
