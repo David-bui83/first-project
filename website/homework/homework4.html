@@ -12,7 +12,7 @@
     <title>IS445</title>
 </head>
 
-<body>
+<body   onload="getfile()">
     <div id="head">
         <h1 id="page-header">IS445 Homework and Project</h1>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -73,6 +73,11 @@
                 <span>fetch</span> method and its promise syntax. When access your web page, just display the following two results
                 (in italic blue format) - format the results whatever you want. Tips: use Chrome dev tools to debug / test
                 your code interactively.</p>
+
+                <div class="jumbotron">
+                    <p id="t_out"></p>
+                    
+                </div>
             <hr class="my-4">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
@@ -85,7 +90,8 @@
                     </p>
 
                     <div class="jumbotron">
-
+                        <p id="callback_output"></p>
+                        
                     </div>
                     <button class="btn btn-outline-primary" style="margin:auto;" onclick="myCallBack()">CallBAck</button>
                 </div>
@@ -97,7 +103,7 @@
                         <span>result is sorted by the username length - shortest first.</span>
                     </p>
                     <div class="jumbotron">
-
+                        <p id="promise_output"></p>
                     </div>
                     <button class="btn btn-outline-primary" style="margin:auto;" onclick="myPromise()">Promise</button>
                 </div>
@@ -106,6 +112,7 @@
 
 
             </div>
+            <script src="../script/homework4_getfile.js"></script>
             <script src="../script/homework4_callback.js"></script>
             <script src="../script/homework4_promise.js"></script>
 
