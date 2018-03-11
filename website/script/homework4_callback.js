@@ -88,7 +88,7 @@ function myCallBack() {
     };
 
     // open function to get list from  url
-    req.open("GET", "http://jsonplaceholder.typicode.com/users", true);
+    req.open("GET", "https://jsonplaceholder.typicode.com/users", true);
     req.send();
 
 }
