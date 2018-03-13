@@ -20,7 +20,7 @@ let getEmail = function ($listOfObjects) {
         // for loop to extract email and store into local array
         for (let i = 0; i < $listOfObjects.length; i++) {
             $userEmail = JSON.stringify($listOfObjects[i].email);
-            $emailArray.push($userEmail)
+            $emailArray.push($userEmail);
         }
 
         // sort array
@@ -93,4 +93,10 @@ function myCallBack() {
 
 }
 
+// Variable selecting element by id
+let btn = document.querySelector('#callbtn');
 
+// adding event listen to and passing function
+btn.addEventListener('click', () =>{
+    myCallBack();
+})
