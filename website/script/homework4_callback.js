@@ -4,7 +4,7 @@
  * function to get the email from the array
  * @param {$listOfObjects}  
  */
-let getEmail = function ($listOfObjects) {
+function getEmail ($listOfObjects, callback) {
     // local variable to store data
     const oList = $listOfObjects;
 
@@ -27,11 +27,13 @@ let getEmail = function ($listOfObjects) {
         $emailArray.sort();
 
         // return array
-        return $emailArray;
+        displayEmails($emailArray);
     } else {
         // return error
-        return 'Error';
+        displayEmails('Error');
     }
+
+
 }
 
 /**
@@ -73,24 +75,22 @@ function myCallBack() {
 
     // variable to store html request
     const req = new XMLHttpRequest();
-
+    let objList = '';
     // funciton to check and get list
     req.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
 
             // variable to store list 
-            let objList = JSON.parse(req.responseText);
+            objList = JSON.parse(req.responseText);
 
-            // Calling function and passing function with array
-            displayEmails(getEmail(objList));
-
-        }
+            // passing list and callback function
+            getEmail(objList, displayEmails());
+        };
     };
 
     // open function to get list from  url
     req.open("GET", "https://jsonplaceholder.typicode.com/users", true);
     req.send();
-
 }
 
 // variable selecting element by id
