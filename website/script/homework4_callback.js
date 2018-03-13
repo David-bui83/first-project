@@ -93,7 +93,7 @@ function myCallBack() {
 
 }
 
-// Variable selecting element by id
+// variable selecting element by id
 let btn = document.querySelector('#callbtn');
 
 // adding event listen to and passing function
