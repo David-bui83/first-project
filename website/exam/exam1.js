@@ -23,7 +23,7 @@ function check(n1, n2) {
         pass = true;
 
     } catch (err) {
-        
+
         // display error message
         document.getElementById('error_output').innerHTML = err;
         document.getElementById('prime_out1').innerHTML = '';
@@ -31,7 +31,7 @@ function check(n1, n2) {
     } finally {
 
         // return value
-        return pass;    
+        return pass;
     }
 }
 
@@ -40,15 +40,15 @@ function check(n1, n2) {
  * @param {n1} n1 
  * @param {n2} n2 
  */
-function smallNumber(n1, n2){
+function smallNumber(n1, n2) {
 
     // if statement to check for smaller number
     // if n1 is smaller than n2, return n1
     // else return n2
-    if(n1 < n2){
+    if (n1 < n2) {
         // return n1
         return n1;
-    }else{
+    } else {
         // return n2
         return n2;
     }
@@ -59,15 +59,15 @@ function smallNumber(n1, n2){
  * @param {n1} n1 
  * @param {n2} n2 
  */
-function bigNumber(n1, n2){
+function bigNumber(n1, n2) {
 
     // if statement to check for bigger number
     // if n1 is bigger than n2, return n1
     // else return n2
-    if(n1 > n2){
+    if (n1 > n2) {
         // return n1
         return n1;
-    }else{
+    } else {
         // return n1
         return n2;
     }
@@ -79,10 +79,10 @@ function bigNumber(n1, n2){
  * @param {n2} n2 
  */
 function getNumbers(n1, n2) {
-    
+
     // variable to store data
     let numArray = [];
-    
+
     // for loop to get prime number and store in array
     // pass value to isPrime() function
     // store number at index i if value is prime
@@ -159,17 +159,17 @@ eBtn.addEventListener('click', () => {
         // if statement to check length of array
         // if array length is greater than 0, display number of prime numbers and prime numbers
         // else, display 'there is 0 prime numbers'
-        if(nArr.length > 0){
-            
+        if (nArr.length > 0) {
+
             // display value
             document.getElementById('error_output').innerHTML = '';
             document.getElementById('prime_out1').innerHTML = 'There are ' + nArr.length + ' prime numbers';
             document.getElementById('prime_out2').innerHTML = nArr;
-        }else{
+        } else {
 
             // display value
             document.getElementById('error_output').innerHTML = '';
-            document.getElementById('prime_out1').innerHTML = 'There are ' + nArr.length + ' prime numbers'; 
+            document.getElementById('prime_out1').innerHTML = 'There are ' + nArr.length + ' prime numbers';
         }
     };
 })
