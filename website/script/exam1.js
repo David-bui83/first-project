@@ -170,6 +170,7 @@ eBtn.addEventListener('click', () => {
             // display value
             document.getElementById('error_output').innerHTML = '';
             document.getElementById('prime_out1').innerHTML = 'There are ' + nArr.length + ' prime numbers';
+            document.getElementById('prime_out2').innerHTML = '';
         }
     };
 })
