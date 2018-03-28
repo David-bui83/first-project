@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="exam1_style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <title>IS445</title>
@@ -41,14 +42,20 @@
                             Future
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="homework/homework3.html">Homework 3</a>
-                            <a class="dropdown-item" href="homework/homework4.html">Homework 4</a>
+                            <a class="dropdown-item" href="../homework/homework3.html">Homework 3</a>
+                            <a class="dropdown-item" href="../homework/homework4.html">Homework 4</a>
                             <a class="dropdown-item" href="#">Homework 5</a>
                             <a class="dropdown-item" href="#">Homework 6</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Project</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exam</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="../exam/exam1.html" class="dropdown-item">Exam1</a>
+                        </div>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -60,13 +67,52 @@
     </div>
 
     <div class="container" id="main-body">
-        <h1>Exam 1</h1>
+        <div class="col">
+            <div class="jumbotron bg-info">
+                <h1 class="text-light">IS445 Midterm Exam</h1>
+                <p class="text-light"> Find all the prime numbers between two numbers</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="numberInput">Number 1:</label>
+                        <input type="text" class="form-control" id="input1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="numberInput">Number 2:</label>
+                        <input type="text" class="form-control" id="input2">
+                    </div>
+                </div>
+                <div class="col-mid-6">
+                    <div class="col">
+                        <button class="btn btn-outline-primary" id="ex_btn">Submit</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <br/>
+                    <p class="text-danger" id="error_output"></p>
+                    <h1 class="text-info" id="prime_out1"></h1>
+                    <p class="text-success" id="prime_out2"></p>
+                </div>
+                <script src="exam1.js"></script>
+            </div>
+        </div>
+
+
 
     </div>
 
     <footer>
         <p>&copy; David Bui, 1250 Bellflower Long Beach, California 90840 562.985.4111</p>
     </footer>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
