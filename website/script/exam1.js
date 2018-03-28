@@ -96,8 +96,8 @@ function getNumbers(n1, n2) {
         if (num === true) {
             // push value at index i into array
             numArray.push(i);
-        };
-    };
+        }
+    }
 
     // return array
     return numArray;
@@ -129,8 +129,8 @@ function isPrime(num) {
         if (num % i === 0) {
             // return false
             return false;
-        };
-    };
+        }
+    }
 
     // return true
     return true;
@@ -164,7 +164,13 @@ eBtn.addEventListener('click', () => {
             // display value
             document.getElementById('error_output').innerHTML = '';
             document.getElementById('prime_out1').innerHTML = 'There are ' + nArr.length + ' prime numbers';
-            document.getElementById('prime_out2').innerHTML = nArr;
+
+            let pNum = '';
+            for (let i = 0; i < nArr.length; i++){
+                pNum += '<li style="list-style-type:none">' + nArr[i] + '</li>'
+            }
+
+            document.getElementById('prime_out2').innerHTML = pNum;
         } else {
 
             // display value
